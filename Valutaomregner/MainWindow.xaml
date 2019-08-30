@@ -7,15 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="" BorderThickness="100" x:Name="Output" HorizontalAlignment="Left" Height="57" Margin="431,154,0,0" VerticalAlignment="Top" Width="179"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="189,182,0,0" TextWrapping="Wrap" Text="" x:Name="Input" VerticalAlignment="Top" Width="120"/>
-        <Button Content="udregn" HorizontalAlignment="Left" Margin="203,246,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox HorizontalAlignment="Left" x:Name="From" Margin="189,111,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Tag="10000">
-                DKK
-            </ComboBoxItem>
-        </ComboBox>
-        <ComboBox HorizontalAlignment="Left" x:Name="To" Margin="474,111,0,0" VerticalAlignment="Top" Width="120"/>
-
+        <Grid>
+            <Label Content="" BorderBrush="LightGray" BorderThickness="1" x:Name="Output1" Height="34" Margin="474,153,0,0" VerticalAlignment="Top" Width="119" HorizontalAlignment="Left"/>
+            <TextBox Height="34" Margin="189,153,0,0" TextWrapping="Wrap" Text="" x:Name="Input" VerticalAlignment="Top" Width="120" HorizontalAlignment="Left"/>
+            <Button Content="udregn" Margin="352,138,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" HorizontalAlignment="Left"/>
+            <ComboBox x:Name="From" Margin="189,111,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" HorizontalAlignment="Left">
+                <ComboBoxItem Tag="10000">
+                    DKK
+                </ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="To" Margin="474,111,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="8" HorizontalAlignment="Left">
+                <ComboBoxItem Tag="10000">
+                    DKK
+                </ComboBoxItem>
+            </ComboBox>
+        </Grid>
     </Grid>
 </Window>
